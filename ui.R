@@ -12,7 +12,10 @@ body <- dashboardBody(
            box(width = NULL,
                solidHeader = T,
                leafletOutput("crimeMap", height = 500))
-    )
+    ),
+    valueBoxOutput("rate"),
+    valueBoxOutput("count"),
+    valueBoxOutput("users")
   )
 )
 

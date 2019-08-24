@@ -33,7 +33,33 @@ function(input, output, session) {
       addAwesomeMarkers(as.numeric(x),
                         as.numeric(y),
                         popup = paste(sep="div",
-                                      leafpop::popupImage(src="logo.png")))
+                                      leafpop::popupImage("http://bit.ly/1TVwRiR")))
     map
+  })
+  
+  output$rate <- renderValueBox({
+    valueBox(
+      value = 100,
+      subtitle = "Downloads per sec (last 5 min)",
+      icon = icon("area-chart"),
+      # color = if (downloadRate >= input$rateThreshold) "yellow" else "aqua"
+      color = "yellow"
+    )
+  })
+  
+  output$count <- renderValueBox({
+    valueBox(
+      value = 200,
+      subtitle = "Total downloads",
+      icon = icon("download")
+    )
+  })
+  
+  output$users <- renderValueBox({
+    valueBox(
+      value = 300,
+      "Unique users",
+      icon = icon("users")
+    )
   })
 }
