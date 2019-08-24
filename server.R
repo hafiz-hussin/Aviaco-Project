@@ -4,6 +4,7 @@ library(leaflet.extras)
 library(dplyr)
 library(rjson)
 library(stringr)
+library(htmlTable)
 
 # data --------------------------------------------------------------------
 
@@ -31,10 +32,21 @@ function(input, output, session) {
         attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
       ) %>% 
       setView(lng = 101.685149, lat = 2.740894, zoom = 17) %>% 
-      addAwesomeMarkers(as.numeric(x),
-                        as.numeric(y),
-                        popup = paste(sep="div",
-                                      leafpop::popupImage("http://bit.ly/1TVwRiR")))
+      addAwesomeMarkers(as.numeric(equipment_df$x),
+                        as.numeric(equipment_df$y),
+                        popup = ~paste0("<br/>Equipment: ", equipment_df$equipments, 
+                                        "<br/>State: ", equipment_df$state,
+                                        "<br/>Ground: ", equipment_df$belongsTo,
+                                        "<br/>Status: ", equipment_df$status,
+                                        "<br/>Current User: ", equipment_df$current_user,
+                                        "<br/>Previous User: ", equipment_df$previous_user,
+                                        "<br/>Description: ", equipment_df$description,
+                                        "<br/>Next Service Date: ", equipment_df$nextMaintenanceDate,
+                                        "<br/>Previous Service Date: ", equipment_df$previousMaintenanceDate
+                                        )
+                        # popup = paste(sep="div",
+                        #               leafpop::popupImage(as.character(equipment_df$image_src)))
+                        )
     map
   })
   
