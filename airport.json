@@ -1,0 +1,87 @@
+{
+    "groundSupportEquipments": {
+
+      "Lifts": {
+        "ScissorsLift001": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894]
+        }
+      },
+      "ServicingCarts": {
+        "WheelDolly001": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894]
+        },
+        "HydraulicJack001": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894]
+        },
+        "BaggageCarts": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894]
+        }
+      },
+      "BeltLoaders": {
+        "Loader001": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894]
+        }
+      },
+      "TowTugs": {
+        "Tug001": {
+          "belongsTo": "KLIA2",
+          "state": "Available",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 TowTug",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.685149, 2.740894],
+          "picture": "src/assets/towtug.jpeg"
+        }
+      },
+      "GroundPowerUnits": {
+        "GPU001": {
+          "belongsTo": "KLIA",
+          "state": "In-Service",
+          "status": "Serviceable",
+          "current_user": "LAE Ikrammula",
+          "description": "A380 Ground Power Unit",
+          "nextMaintenanceDate": "2019/08/30",
+          "previousMaintenanceDate": "2019/08/01",
+          "current_coordinates": [101.684249, 2.741094],
+          "picture": "src/assets/groundpowerunit.jpeg"
+        }
+      }
+    }
+  }
