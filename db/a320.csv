@@ -1,24 +1,24 @@
-equipments,belongsTo,state,status,current_user,previous_user,description,nextMaintenanceDate,previousMaintenanceDate,x,y
-HYDRAULIC_JACK001,KLIA2,Available,Serviceable,-,LAE Ali,-,2019/08/30,2019/08/01,101.685149,2.740894
-SCISSOR_LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE Abu,battery issue,2019/08/30,2019/08/01,101.685149,2.740894
-VAN001,KLIA2,Available,Serviceable,-,LAE Amat,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWTUG_WIDE_BODY001,KLIA1,IN-USE,Serviceable,LAE Azrol,LAE Raju,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWTUG NARROW BODY001,KLIA1,Unavailable,Unserviceable,-,LAE Amin,no fuel,2019/08/30,2019/08/01,101.685149,2.740894
-LAVATORY TRUCK001,KLIA2,Unavailable,Unserviceable,-,LAE Karim,no fuel,2019/08/30,2019/08/01,101.685149,2.740894
-WATER TRUCK001,KLIA2,IN-USE,Serviceable,LAE Tiger,LAE Jamal,-,2019/08/30,2019/08/01,101.685149,2.740894
-GROUND POWER UNIT001,KLIA2,Unavailable,Unserviceable,-,LAE Izzat,engine issue,2019/08/30,2019/08/01,101.685149,2.740894
-AIR-CONDITIONED_UNIT001,KLIA1,Available,Serviceable,-,LAE Hafiz,power issue,2019/08/30,2019/08/01,101.685149,2.740894
-AIRSTART001,KLIA2,IN-USE,Serviceable,LAE Norffendy,LAE Naton,-,2019/08/30,2019/08/01,101.685149,2.740894
-TRACTOR001,KLIA2,Available,Serviceable,-,LAE Amirul,-,2019/08/30,2019/08/01,101.685149,2.740894
-9_METER_HI-LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE Jack,Hydraulic leaking,2019/08/30,2019/08/01,101.685149,2.740894
-BOOM-LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE John,Hydraulic leaking,2019/08/30,2019/08/01,101.685149,2.740894
-BRAKE_COOLING001,KLIA2,Available,Serviceable,-,LAE Jake,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_B737,KLIA1,IN-USE,Serviceable,LAE Jeff,LAE Mike,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_A320,KLIA2,Available,Serviceable,-,LAE Jane,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_B747,KLIA2,Available,Serviceable,-,LAE Jenny,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_B757,KLIA2,Unavailable,Unserviceable,-,LAE Jessy,Broken Pin,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_A380,KLIA2,Available,Serviceable,-,LAE Jin,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_MD80/DC9,KLIA1,IN-USE,Serviceable,LAE Tiaga,LAE Yui,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_MULTIPURPOSE,KLIA2,Available,Serviceable,-,LAE Hyuna,-,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_A340-500/600,KLIA1,Unavailable,Unserviceable,-,LAE D-dragon,Broken Pin,2019/08/30,2019/08/01,101.685149,2.740894
-TOWBAR_A300/A310/B727/B757,KLIA2,Available,Serviceable,-,LAE IU,-,2019/08/30,2019/08/01,101.685149,2.740894
+equipments,belongsTo,state,status,current_user,previous_user,description,nextMaintenanceDate,previousMaintenanceDate,x,y,image_src
+HYDRAULIC_JACK001,KLIA2,Available,Serviceable,-,LAE Ali,-,2019/08/30,2019/08/01,101.685649,2.741894,
+SCISSOR_LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE Abu,battery issue,2019/08/30,2019/08/01,101.684549,2.742894,
+VAN001,KLIA2,Available,Serviceable,-,LAE Amat,-,2019/08/30,2019/08/01,101.684149,2.740394,
+TOWTUG_WIDE_BODY001,KLIA1,IN-USE,Serviceable,LAE Azrol,LAE Raju,-,2019/08/30,2019/08/01,101.686149,2.740494,http://www.airportsystems.de/aircraft_pushback_tractors/
+TOWTUG NARROW BODY001,KLIA1,Unavailable,Unserviceable,-,LAE Amin,no fuel,2019/08/30,2019/08/01,101.687149,2.740794,
+LAVATORY TRUCK001,KLIA2,Unavailable,Unserviceable,-,LAE Karim,no fuel,2019/08/30,2019/08/01,101.688249,2.740184,
+WATER TRUCK001,KLIA2,IN-USE,Serviceable,LAE Tiger,LAE Jamal,-,2019/08/30,2019/08/01,101.685149,2.740344,
+GROUND POWER UNIT001,KLIA2,Unavailable,Unserviceable,-,LAE Izzat,engine issue,2019/08/30,2019/08/01,101.685149,2.740894,
+AIR-CONDITIONED_UNIT001,KLIA1,Available,Serviceable,-,LAE Hafiz,power issue,2019/08/30,2019/08/01,101.685149,2.740224,http://www.airportsystems.de/air_condition_units/
+AIRSTART001,KLIA2,IN-USE,Serviceable,LAE Norffendy,LAE Naton,-,2019/08/30,2019/08/01,101.689149,2.740644,
+TRACTOR001,KLIA2,Available,Serviceable,-,LAE Amirul,-,2019/08/30,2019/08/01,101.682349,2.740054,
+9_METER_HI-LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE Jack,Hydraulic leaking,2019/08/30,2019/08/01,101.683149,2.740333,
+BOOM-LIFT001,KLIA2,Unavailable,Unserviceable,-,LAE John,Hydraulic leaking,2019/08/30,2019/08/01,101.681549,2.740444,
+BRAKE_COOLING001,KLIA2,Available,Serviceable,-,LAE Jake,-,2019/08/30,2019/08/01,101.689349,2.740894,
+TOWBAR_B737,KLIA1,IN-USE,Serviceable,LAE Jeff,LAE Mike,-,2019/08/30,2019/08/01,101.680349,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A320,KLIA2,Available,Serviceable,-,LAE Jane,-,2019/08/30,2019/08/01,101.689549,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_B747,KLIA2,Available,Serviceable,-,LAE Jenny,-,2019/08/30,2019/08/01,101.688849,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_B757,KLIA2,Unavailable,Unserviceable,-,LAE Jessy,Broken Pin,2019/08/30,2019/08/01,101.684449,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A380,KLIA2,Available,Serviceable,-,LAE Jin,-,2019/08/30,2019/08/01,101.686649,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_MD80/DC9,KLIA1,IN-USE,Serviceable,LAE Tiaga,LAE Yui,-,2019/08/30,2019/08/01,101.682319,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_MULTIPURPOSE,KLIA2,Available,Serviceable,-,LAE Hyuna,-,2019/08/30,2019/08/01,101.683149,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A340-500/600,KLIA1,Unavailable,Unserviceable,-,LAE D-dragon,Broken Pin,2019/08/30,2019/08/01,101.687149,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A300/A310/B727/B757,KLIA2,Available,Serviceable,-,LAE IU,-,2019/08/30,2019/08/01,101.685449,2.740894,http://www.airportsystems.de/aircraft_towbars/
