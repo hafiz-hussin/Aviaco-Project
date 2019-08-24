@@ -1,6 +1,7 @@
 library(shinydashboard)
 library(leaflet)
 library(leaflet.extras)
+library(shiny)
 
 header <- dashboardHeader(
   title = "Aviaco"
@@ -22,11 +23,23 @@ body <- dashboardBody(
 
 sidebar <- dashboardSidebar(
   sidebarMenu(
-    sliderInput("slider", "Year Input:", 2005, 2018, 1,
-                animate = animationOptions(interval = 1500))
-  )
+  id = "tabs",
+  menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+  menuItem("AIRPLANE", tabName = "airplane", icon = icon("plane")),
+  menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
+  menuItem("CREW", tabName = "crew", icon = icon("cogs"))
+  ),
+dashboardBody(
+tabItems(
+tabItem(tabName = "airplane",
+h2("Parking")),
+tabItem(tabName = "equipment",
+        h2("available")),
+tabItem(tabName = "crew",
+        h2("available"))
 )
-
+)
+)
 dashboardPage(
   header,
   sidebar,

@@ -4,12 +4,18 @@ library(leaflet.extras)
 library(dplyr)
 library(rjson)
 library(stringr)
-library(htmlTable)
+library(shiny)
 
 # data --------------------------------------------------------------------
 
 function(input, output, session) {
-  
+  # observeEvent(input$tabs, {
+  #   newtab <- switch(("airplane" = "Parking"),
+  #                    ("equipment" = "Available"),
+  #                    ("crew" = "Available"))
+  #   updateTabItems(session, "tabs", newtab)
+  # })
+  # 
   output$crimeMap <- renderLeaflet({
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")
