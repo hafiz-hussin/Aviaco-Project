@@ -1,13 +1,35 @@
-customer,lavatory,refueling,engine,water,lubrication,tyre_check,a_check,b_check,c_check
-AirAsia,1,1,1,1,1,1,0,0,0
-Singapore Airlines,0,0,0,0,0,1,0,0,0
-KLM,1,1,1,1,1,1,0,0,0
-British Airways,1,1,1,1,1,1,0,0,0
-Lufthansa,1,1,1,1,1,1,0,0,0
-Qatar Airways,1,1,1,1,1,1,0,0,0
-Cathay Pacific,1,1,1,0,1,1,0,0,0
-All Nipon Airways,1,1,0,1,1,1,0,0,0
-Garuda Airline,1,0,1,1,1,1,0,0,0
-Thai Airways,1,1,1,1,1,1,0,0,0
-Cambodia Angkor Air,1,0,1,1,1,1,0,0,0
-Malaysia Airlines,0,1,1,1,1,1,0,0,0
+customer,lavatory_service,technical_assistant,water_service,towing_service,ground_power_service,pushback,headset_service,aircon_service,airstart_service
+AirAsia,1,1,1,0,1,1,1,1,1
+Singapore Airlines,0,0,0,0,1,1,0,1,1
+KLM,1,1,1,1,1,1,1,1,1
+British Airways,1,1,1,1,1,1,1,1,1
+Lufthansa,1,1,1,1,1,1,1,1,1
+Qatar Airways,1,1,1,1,1,1,1,1,1
+Cathay Pacific,1,1,0,1,1,1,1,1,1
+ANA,1,1,1,1,1,1,1,1,1
+Garuda Airline,1,0,1,1,1,1,1,1,1
+Thai Airways,1,1,1,1,1,1,1,1,1
+Cambodia Angkor Air,1,0,1,1,1,1,1,1,1
+Malaysia Airlines,0,1,1,0,1,1,1,1,1
+VietJet Air,0,1,1,1,1,1,1,1,1
+PosAce,0,1,1,1,1,1,1,1,1
+Scoot Airline,1,1,1,0,1,1,1,1,1
+JetStar Airways,0,0,0,0,1,1,0,1,1
+Emirates,1,1,1,1,1,1,1,1,1
+Saudia Airline,1,1,1,1,1,1,1,1,1
+UPS,1,1,1,1,1,1,1,1,1
+Fedex,1,1,1,1,1,1,1,1,1
+Thai Smile,1,1,0,1,1,1,1,1,1
+Bangkok Airways,1,1,1,1,1,1,1,1,1
+Cebu Pacitic Airline,1,0,1,1,1,1,1,1,1
+Etihat Airways,1,1,1,1,1,1,1,1,1
+Royal Brunei,1,0,1,1,1,1,1,1,1
+Silk Air,0,1,1,0,1,1,1,1,1
+Mahan Air,0,1,1,1,1,1,1,1,1
+Turkish Airlines,0,1,1,1,1,1,1,1,1
+Ethiopian Airlines,1,1,1,0,1,1,1,1,1
+Pakistan International Airlines,0,0,0,0,1,1,0,1,1
+Cargolux,1,1,1,1,1,1,1,1,1
+Oman Air,1,1,1,1,1,1,1,1,1
+Korean Air,1,1,1,1,1,1,1,1,1
+Philippine Airlines,1,1,1,1,1,1,1,1,1
