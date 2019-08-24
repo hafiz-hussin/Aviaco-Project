@@ -4,7 +4,6 @@ library(leaflet.extras)
 library(dplyr)
 library(rjson)
 library(stringr)
-library(htmlTable)
 
 # data --------------------------------------------------------------------
 
