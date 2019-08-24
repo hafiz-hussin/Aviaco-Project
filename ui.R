@@ -11,20 +11,22 @@ body <- dashboardBody(
     column(width = 12,
            box(width = NULL,
                solidHeader = T,
-               leafletOutput("crimeMap", height = 500))
+               leafletOutput("flightmap", height = 500))
     )
   )
 )
 
-sidebar <- dashboardSidebar(
+selectType <- dashboardSidebar(
   sidebarMenu(
-    sliderInput("slider", "Year Input:", 2005, 2018, 1,
-                animate = animationOptions(interval = 1500))
-  )
-)
+                menuItem("AIRPLANE",tabName="Airplane"),
+                menuItem("EQUIPMENT",tabName="Equipment"),
+                menuItem("CREW",tabName="Crew")
+  ))
+
+
 dashboardPage(
   header,
-  sidebar,
+  selectType,
   body
 )
 
