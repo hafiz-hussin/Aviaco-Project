@@ -27,7 +27,7 @@ sidebar <- dashboardSidebar(
   menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
   menuItem("AIRPLANE", tabName = "airplane", icon = icon("plane")),
   menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
-  menuItem("CREW", tabName = "crew", icon = icon("cogs"))
+  menuItem("CREW", tabName = "crew", icon = icon("user"))
   ),
 dashboardBody(
 tabItems(
