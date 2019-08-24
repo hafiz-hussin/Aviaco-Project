@@ -11,7 +11,8 @@ body <- dashboardBody(
     column(width = 12,
            box(width = NULL,
                solidHeader = T,
-               leafletOutput("crimeMap", height = 500))
+               leafletOutput("crimeMap", height = 500)
+               )
     ),
     valueBoxOutput("rate"),
     valueBoxOutput("count"),
@@ -25,6 +26,7 @@ sidebar <- dashboardSidebar(
                 animate = animationOptions(interval = 1500))
   )
 )
+
 dashboardPage(
   header,
   sidebar,

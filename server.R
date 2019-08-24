@@ -13,6 +13,7 @@ function(input, output, session) {
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")
     json_data_frame <- as.data.frame(df)
+    equipment_df <- read.csv("db/equipments.csv")
     
     coor <- str_split(json_data_frame$groundSupportEquipments.Lifts.ScissorsLift001.current_coordinates, ',', n = 1, simplify = FALSE)
     x <- coor[1]
