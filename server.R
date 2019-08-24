@@ -15,7 +15,7 @@ function(input, output, session) {
   #                    ("crew" = "Available"))
   #   updateTabItems(session, "tabs", newtab)
   # })
-  # 
+  #
   output$crimeMap <- renderLeaflet({
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")

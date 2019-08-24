@@ -1,0 +1,13 @@
+customer,lavatory,refueling,engine,water,lubrication,tyre_check,a_check,b_check,c_check
+AirAsia,1,1,1,1,1,1,0,0,0
+Singapore Airlines,0,0,0,0,0,1,0,0,0
+KLM,1,1,1,1,1,1,0,0,0
+British Airways,1,1,1,1,1,1,0,0,0
+Lufthansa,1,1,1,1,1,1,0,0,0
+Qatar Airways,1,1,1,1,1,1,0,0,0
+Cathay Pacific,1,1,1,0,1,1,0,0,0
+All Nipon Airways,1,1,0,1,1,1,0,0,0
+Garuda Airline,1,0,1,1,1,1,0,0,0
+Thai Airways,1,1,1,1,1,1,0,0,0
+Cambodia Angkor Air,1,0,1,1,1,1,0,0,0
+Malaysia Airlines,0,1,1,1,1,1,0,0,0
