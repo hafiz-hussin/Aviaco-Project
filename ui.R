@@ -1,23 +1,9 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
-## ui.R ##
 library(shinydashboard)
+library(leaflet)
+library(leaflet.extras)
 
 header <- dashboardHeader(
-  title = "Aviaco Dev"
-)
-
-sidebar <- dashboardSidebar(
-  menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-  menuItem("Widgets", icon = icon("th"), tabName = "widgets",
-           badgeLabel = "new", badgeColor = "green")
+  title = "Aviaco"
 )
 
 body <- dashboardBody(
@@ -25,9 +11,21 @@ body <- dashboardBody(
     column(width = 12,
            box(width = NULL,
                solidHeader = T,
-               leafletOutput("MainMap", height = 500))
+               leafletOutput("crimeMap", height = 500))
     )
   )
 )
 
-dashboardPage(header, sidebar, body)
+sidebar <- dashboardSidebar(
+  sidebarMenu(
+    sliderInput("slider", "Year Input:", 2005, 2018, 1,
+                animate = animationOptions(interval = 1500))
+  )
+)
+dashboardPage(
+  header,
+  sidebar,
+  body
+)
+
+
