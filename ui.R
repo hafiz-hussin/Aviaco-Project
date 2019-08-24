@@ -25,9 +25,31 @@ body <- dashboardBody(
     column(width = 12,
            box(width = NULL,
                solidHeader = T,
+<<<<<<< HEAD
                leafletOutput("MainMap", height = 500))
+=======
+               leafletOutput("flightmap", height = 500))
+>>>>>>> 737a8e9427f7ef0a1d08dcfd16964471e95de21a
     )
   )
 )
 
+<<<<<<< HEAD
 dashboardPage(header, sidebar, body)
+=======
+selectType <- dashboardSidebar(
+  sidebarMenu(
+                menuItem("AIRPLANE",tabName="Airplane"),
+                menuItem("EQUIPMENT",tabName="Equipment"),
+                menuItem("CREW",tabName="Crew")
+  ))
+
+
+dashboardPage(
+  header,
+  selectType,
+  body
+)
+
+
+>>>>>>> 737a8e9427f7ef0a1d08dcfd16964471e95de21a
