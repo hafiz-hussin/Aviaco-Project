@@ -9,13 +9,7 @@ library(shiny)
 # data --------------------------------------------------------------------
 
 function(input, output, session) {
-  # observeEvent(input$tabs, {
-  #   newtab <- switch(("airplane" = "Parking"),
-  #                    ("equipment" = "Available"),
-  #                    ("crew" = "Available"))
-  #   updateTabItems(session, "tabs", newtab)
-  # })
-  #
+ 
   output$crimeMap <- renderLeaflet({
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")
@@ -56,29 +50,42 @@ function(input, output, session) {
     map
   })
   
-  output$rate <- renderValueBox({
+  output$unassigned <- renderValueBox({
     valueBox(
       value = 100,
-      subtitle = "Downloads per sec (last 5 min)",
-      icon = icon("area-chart"),
+      subtitle = "Unassigned",
+      icon = icon("folder-open"),
       # color = if (downloadRate >= input$rateThreshold) "yellow" else "aqua"
-      color = "yellow"
+      color = "red"
     )
   })
-  
-  output$count <- renderValueBox({
+
+    output$assigned <- renderValueBox({
+        valueBox(
+        value = 100,
+        subtitle = "Assigned",
+        icon = icon("clipboard"),
+        # color = if (downloadRate >= input$rateThreshold) "yellow" else "aqua"
+        color = "yellow"
+        )
+    })
+
+
+    output$inprogress <- renderValueBox({
     valueBox(
       value = 200,
-      subtitle = "Total downloads",
-      icon = icon("download")
+      subtitle = "In Progress",
+      icon = icon("spinner"),
+      color = "green"
     )
   })
   
-  output$users <- renderValueBox({
+  output$completed <- renderValueBox({
     valueBox(
       value = 300,
-      "Unique users",
-      icon = icon("users")
+      "Completed",
+      icon = icon("thumbs-up"),
+      color = "green"
     )
   })
 }
