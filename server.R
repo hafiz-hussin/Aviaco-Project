@@ -23,18 +23,18 @@ output$menu <- renderMenu({
   sidebarMenu(
     actionButton("goButton1", "EMERGENCY", width = "90%"),
     sidebarSearchForm("searchText","buttonSearch","Search"),
-    menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+    menuItem("DASHBOARD", tabName = "dashboard", icon = icon("dashboard")),
     menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
-    menuItem("VAN", tabName = "van", icon = icon("cogs")),
-    menuItem("TOWTUG WIDE BODY", tabName = "towtugwide", icon = icon("cogs")),
-    menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow", icon = icon("cogs")),
-    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
-    menuItem("WATER TRUCK", tabName = "watertruck", icon = icon("cogs")),
-    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
-    menuItem("GROUND POWER", tabName = "groundpower", icon = icon("cogs")),
+    menuItem("VAN", tabName = "van", icon = icon("shuttle-van")),
+    menuItem("TOWTUG WIDE BODY", tabName = "towtugwide", icon = icon("truck-moving")),
+    menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow", icon = icon("truck")),
+    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("truck")),
+    menuItem("WATER TRUCK", tabName = "watertruck", icon = icon("tint")),
+    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("truck")),
+    menuItem("GROUND POWER", tabName = "groundpower", icon = icon("plug")),
     menuItem("AIR-CONDITIONED", tabName = "airconditioned", icon = icon("cogs")),
-    menuItem("AIRSTART", tabName = "airstart", icon = icon("cogs")),
-    menuItem("TRACTOR", tabName = "tractor", icon = icon("cogs"))
+    menuItem("AIRSTART", tabName = "airstart", icon = icon("truck")),
+    menuItem("TRACTOR", tabName = "tractor", icon = icon("truck"))
 
     )
   })
