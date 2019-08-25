@@ -4,16 +4,78 @@ library(leaflet.extras)
 library(shiny)
 
 header <- dashboardHeader(
-  title = "Aviaco"
+  title = "Aviaco",
+  dropdownMenu(type = "messages",
+               messageItem(
+                 from = "Sales Dept",
+                 message = "Sales are steady this month."
+               ),
+               messageItem(
+                 from = "New User",
+                 message = "How do I register?",
+                 icon = icon("question"),
+                 time = "13:45"
+               ),
+               messageItem(
+                 from = "Support",
+                 message = "The new server is ready.",
+                 icon = icon("life-ring"),
+                 time = "2014-12-01"
+               )
+  ),
+  dropdownMenu(type = "notifications",
+               notificationItem(
+                 text = "5 new users today",
+                 icon("users")
+               ),
+               notificationItem(
+                 text = "12 items delivered",
+                 icon("truck"),
+                 status = "success"
+               ),
+               notificationItem(
+                 text = "Server load at 86%",
+                 icon = icon("exclamation-triangle"),
+                 status = "warning"
+               )
+  )
 )
 
 body <- dashboardBody(
   fluidRow(
-    column(width = 12,
+    column(width = 9,
            box(width = NULL,
                solidHeader = T,
                leafletOutput("crimeMap", height = 500)
                )
+    ),
+    column(width = 3,
+           box(width = NULL,
+               solidHeader = F,
+               title = "TASK PROGRESSION",
+               taskItem(value = 98, color = "green",
+                        "GARUDA"
+               ),
+               taskItem(value = 75, color = "aqua",
+                        "AIRASIA"
+               ),
+               taskItem(value = 15, color = "red",
+                        "KLM"
+               ),
+               taskItem(value = 90, color = "green",
+                        "QATAR"
+               ),
+               taskItem(value = 20, color = "red",
+                        "THAI"
+               ),
+               taskItem(value = 10, color = "red",
+                        "CATHAY"
+               ),
+               taskItem(value = 80, color = "aqua",
+                        "ANA"
+               ),
+               height = 520
+           )
     ),
     valueBoxOutput("unassigned",width = 3),
     valueBoxOutput("assigned",width = 3),
@@ -23,37 +85,9 @@ body <- dashboardBody(
 )
 
 sidebar <- dashboardSidebar(
-  sidebarMenu(
-    sidebarSearchForm("searchText","buttonSearch","Search"),
-  id = "tabs",
-  menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-  menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
-  menuItem("VAN", tabName = "van"),
-  menuItem("TOWTUG WIDE BODY", tabName = "towtugwide"),
-  menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow"),
-  menuItem("LAVATORY TRUCK", tabName = "lavatorytruck"),
-  menuItem("WATER TRUCK", tabName = "watertruck"),
-  menuItem("LAVATORY TRUCK", tabName = "lavatorytruck"),
-  menuItem("GROUND POWER", tabName = "groundpower"),
-  menuItem("AIR-CONDITIONED", tabName = "airconditioned"),
-  menuItem("AIRSTART", tabName = "airstart"),
-  menuItem("TRACTOR", tabName = "tractor"),
-  menuItem("9 METER HI-LIFT", tabName = "hilift"),
-  menuItem("BOOM-LIFT", tabName = "boomlift"),
-  menuItem("SC-LIFT", tabName = "sclift"),
-  menuItem("BRAKE COOLING", tabName = "brakecooling"),
-  menuItem("TOWBAR B737", tabName = "towbarB737"),
-  menuItem("TOWBAR A320", tabName = "towbarA320"),
-  menuItem("TOWBAR B747", tabName = "towbarB747"),
-  menuItem("TOWBAR B757", tabName = "towbarB757"),
-  menuItem("TOWBAR A380", tabName = "towbarA380"),
-  menuItem("TOWBAR MD80/DC9", tabName = "towbarmd80/dc9"),
-  menuItem("TOWBAR MULTIPURPOSE", tabName = "towbarmulti"),
-  menuItem("TOWBAR A340-500/600", tabName = "towbarA340-500/600"),
-  menuItem("TOWBAR MD80/DC9", tabName = "towbarmd80/dc9"),
-  menuItem("TOWBAR A300/A310/B727/B757", tabName = "towbarA300/A310/B727/B757"),
-  menuItem("CREW", tabName = "crew", icon = icon("user"))
-  ))
+  sidebarMenu(id = "menu", sidebarMenuOutput("menu"))
+)
+
 dashboardPage(
   header,
   sidebar,
