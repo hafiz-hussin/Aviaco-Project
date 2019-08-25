@@ -9,7 +9,43 @@ library(shiny)
 # data --------------------------------------------------------------------
 
 function(input, output, session) {
- 
+
+  # observeEvent(input$tabs, {
+  #   newtab <- switch(("airplane" = "Parking"),
+  #                    ("equipment" = "Available"),
+  #                    ("crew" = "Available"))
+  #   updateTabItems(session, "tabs", newtab)
+  # })
+  #
+  observeEvent(input$goButton1, {
+    van_df <- equipment_df %>% filter(str_detect(equipments, 'VAN'))
+    leafletProxy("crimeMap") %>% clearShapes() %>% clearPopups()
+    leafletProxy("crimeMap") %>% addPulseMarkers(
+      lng = van_df$x, lat = van_df$y,
+      label = "This is Van", icon = makePulseIcon(heartbeat = 0.5)
+    )
+  })
+
+  output$tabs <- renderMenu({
+    sidebarMenu(
+      actionButton("goButton1", "EMERGENCY", width = "90%"),
+      sidebarSearchForm("searchText","buttonSearch","Search"),
+      menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+      menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
+      menuItem("VAN", tabName = "van", icon = icon("cogs")),
+      menuItem("TOWTUG WIDE BODY", tabName = "towtugwide", icon = icon("cogs")),
+      menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow", icon = icon("cogs")),
+      menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
+      menuItem("WATER TRUCK", tabName = "watertruck", icon = icon("cogs")),
+      menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
+      menuItem("GROUND POWER", tabName = "groundpower", icon = icon("cogs")),
+      menuItem("AIR-CONDITIONED", tabName = "airconditioned", icon = icon("cogs")),
+      menuItem("AIRSTART", tabName = "airstart", icon = icon("cogs")),
+      menuItem("TRACTOR", tabName = "tractor", icon = icon("cogs"))
+
+    )
+  })
+
   output$crimeMap <- renderLeaflet({
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")
@@ -35,7 +71,7 @@ function(input, output, session) {
       setView(lng = 101.685149, lat = 2.740894, zoom = 17) %>% 
       addMarkers(as.numeric(equipment_df$x),
                  as.numeric(equipment_df$y),
-                 popup = ~paste0("<br/>Equipment: ", equipment_df$id, 
+                 popup = ~paste0("<br/>Equipment: ", equipment_df$id,
                                  "<br/>State: ", equipment_df$state,
                                  "<br/>Ground: ", equipment_df$belongsTo,
                                  "<br/>Status: ", equipment_df$status,
@@ -47,7 +83,7 @@ function(input, output, session) {
                  , icon = ifelse(as.numeric(equipment_df$equipments) == 1, airportIcons["towbar"], airportIcons["aircraft"]))
       # addAwesomeMarkers(as.numeric(equipment_df$x),
       #                   as.numeric(equipment_df$y),
-      #                   popup = ~paste0("<br/>Equipment: ", equipment_df$equipments, 
+      #                   popup = ~paste0("<br/>Equipment: ", equipment_df$equipments,
       #                                   "<br/>State: ", equipment_df$state,
       #                                   "<br/>Ground: ", equipment_df$belongsTo,
       #                                   "<br/>Status: ", equipment_df$status,
