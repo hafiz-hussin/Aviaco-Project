@@ -31,6 +31,7 @@ function(input, output, session) {
       setView(lng = 101.684949, lat = 2.740494, zoom = 18) %>% 
       addMarkers(as.numeric(equipment_df$x),
                  as.numeric(equipment_df$y),
+                 label = ~equipment_df$id,
                  popup = ~paste0("<br/>Equipment: ", equipment_df$id, 
                                  "<br/>State: ", equipment_df$state,
                                  "<br/>Ground: ", equipment_df$belongsTo,
