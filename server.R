@@ -10,13 +10,6 @@ library(shiny)
 
 function(input, output, session) {
 
-  # observeEvent(input$tabs, {
-  #   newtab <- switch(("airplane" = "Parking"),
-  #                    ("equipment" = "Available"),
-  #                    ("crew" = "Available"))
-  #   updateTabItems(session, "tabs", newtab)
-  # })
-  #
   observeEvent(input$goButton1, {
     van_df <- equipment_df %>% filter(str_detect(equipments, 'VAN'))
     leafletProxy("crimeMap") %>% clearShapes() %>% clearPopups()
@@ -67,6 +60,7 @@ function(input, output, session) {
       setView(lng = 101.684949, lat = 2.740494, zoom = 18) %>% 
       addMarkers(as.numeric(equipment_df$x),
                  as.numeric(equipment_df$y),
+                 label = ~equipment_df$id,
                  popup = ~paste0("<br/>Equipment: ", equipment_df$id,
                                  "<br/>State: ", equipment_df$state,
                                  "<br/>Ground: ", equipment_df$belongsTo,
@@ -81,7 +75,7 @@ function(input, output, session) {
     
       # addAwesomeMarkers(as.numeric(equipment_df$x),
       #                   as.numeric(equipment_df$y),
-      #                   popup = ~paste0("<br/>Equipment: ", equipment_df$equipments,
+      #                   popup = ~paste0("<br/>Equipment: ", equipment_df$equipments, 
       #                                   "<br/>State: ", equipment_df$state,
       #                                   "<br/>Ground: ", equipment_df$belongsTo,
       #                                   "<br/>Status: ", equipment_df$status,
