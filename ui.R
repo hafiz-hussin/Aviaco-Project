@@ -15,10 +15,6 @@ body <- dashboardBody(
                leafletOutput("crimeMap", height = 500)
                )
     ),
-    valueBoxOutput("unassigned",width = 3),
-    valueBoxOutput("assigned",width = 3),
-    valueBoxOutput("inprogress",width = 3),
-    valueBoxOutput("completed",width = 3)
     column(width = 3,
            box(width = NULL,
                solidHeader = F,
@@ -45,46 +41,19 @@ body <- dashboardBody(
                         "TG"
                ),
                height = 520
-               )
-           ),
-    valueBoxOutput("rate"),
-    valueBoxOutput("count"),
-    valueBoxOutput("users")
+           )
+    ),
+    valueBoxOutput("unassigned",width = 3),
+    valueBoxOutput("assigned",width = 3),
+    valueBoxOutput("inprogress",width = 3),
+    valueBoxOutput("completed",width = 3)
   )
 )
 
 sidebar <- dashboardSidebar(
-  sidebarMenu(
-    sidebarSearchForm("searchText","buttonSearch","Search"),
-  id = "tabs",
-  menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-  menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
-  menuItem("VAN", tabName = "van"),
-  menuItem("TOWTUG WIDE BODY", tabName = "towtugwide"),
-  menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow"),
-  menuItem("LAVATORY TRUCK", tabName = "lavatorytruck"),
-  menuItem("WATER TRUCK", tabName = "watertruck"),
-  menuItem("LAVATORY TRUCK", tabName = "lavatorytruck"),
-  menuItem("GROUND POWER", tabName = "groundpower"),
-  menuItem("AIR-CONDITIONED", tabName = "airconditioned"),
-  menuItem("AIRSTART", tabName = "airstart"),
-  menuItem("TRACTOR", tabName = "tractor"),
-  menuItem("9 METER HI-LIFT", tabName = "hilift"),
-  menuItem("BOOM-LIFT", tabName = "boomlift"),
-  menuItem("SC-LIFT", tabName = "sclift"),
-  menuItem("BRAKE COOLING", tabName = "brakecooling"),
-  menuItem("TOWBAR B737", tabName = "towbarB737"),
-  menuItem("TOWBAR A320", tabName = "towbarA320"),
-  menuItem("TOWBAR B747", tabName = "towbarB747"),
-  menuItem("TOWBAR B757", tabName = "towbarB757"),
-  menuItem("TOWBAR A380", tabName = "towbarA380"),
-  menuItem("TOWBAR MD80/DC9", tabName = "towbarmd80/dc9"),
-  menuItem("TOWBAR MULTIPURPOSE", tabName = "towbarmulti"),
-  menuItem("TOWBAR A340-500/600", tabName = "towbarA340-500/600"),
-  menuItem("TOWBAR MD80/DC9", tabName = "towbarmd80/dc9"),
-  menuItem("TOWBAR A300/A310/B727/B757", tabName = "towbarA300/A310/B727/B757"),
-  menuItem("CREW", tabName = "crew", icon = icon("user"))
-  ))
+  sidebarMenu(id = "menu", sidebarMenuOutput("menu"))
+)
+
 dashboardPage(
   header,
   sidebar,

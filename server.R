@@ -7,11 +7,11 @@ library(stringr)
 library(shiny)
 
 # data --------------------------------------------------------------------
-
+equipment_df <- read.csv("db/equipments.csv")
 function(input, output, session) {
 
   observeEvent(input$goButton1, {
-    van_df <- equipment_df %>% filter(str_detect(equipments, 'VAN'))
+    van_df <- equipment_df %>% filter(str_detect(id, "Ace"))
     leafletProxy("crimeMap") %>% clearShapes() %>% clearPopups()
     leafletProxy("crimeMap") %>% addPulseMarkers(
       lng = van_df$x, lat = van_df$y,
@@ -19,26 +19,26 @@ function(input, output, session) {
     )
   })
 
-  output$tabs <- renderMenu({
-    sidebarMenu(
-      actionButton("goButton1", "EMERGENCY", width = "90%"),
-      sidebarSearchForm("searchText","buttonSearch","Search"),
-      menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
-      menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
-      menuItem("VAN", tabName = "van", icon = icon("cogs")),
-      menuItem("TOWTUG WIDE BODY", tabName = "towtugwide", icon = icon("cogs")),
-      menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow", icon = icon("cogs")),
-      menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
-      menuItem("WATER TRUCK", tabName = "watertruck", icon = icon("cogs")),
-      menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
-      menuItem("GROUND POWER", tabName = "groundpower", icon = icon("cogs")),
-      menuItem("AIR-CONDITIONED", tabName = "airconditioned", icon = icon("cogs")),
-      menuItem("AIRSTART", tabName = "airstart", icon = icon("cogs")),
-      menuItem("TRACTOR", tabName = "tractor", icon = icon("cogs"))
+output$menu <- renderMenu({
+  sidebarMenu(
+    actionButton("goButton1", "EMERGENCY", width = "90%"),
+    sidebarSearchForm("searchText","buttonSearch","Search"),
+    menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+    menuItem("EQUIPMENT", tabName = "equipment", icon = icon("cogs")),
+    menuItem("VAN", tabName = "van", icon = icon("cogs")),
+    menuItem("TOWTUG WIDE BODY", tabName = "towtugwide", icon = icon("cogs")),
+    menuItem("TOWTUG NARROW BODY", tabName = "towtugnarrow", icon = icon("cogs")),
+    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
+    menuItem("WATER TRUCK", tabName = "watertruck", icon = icon("cogs")),
+    menuItem("LAVATORY TRUCK", tabName = "lavatorytruck", icon = icon("cogs")),
+    menuItem("GROUND POWER", tabName = "groundpower", icon = icon("cogs")),
+    menuItem("AIR-CONDITIONED", tabName = "airconditioned", icon = icon("cogs")),
+    menuItem("AIRSTART", tabName = "airstart", icon = icon("cogs")),
+    menuItem("TRACTOR", tabName = "tractor", icon = icon("cogs"))
 
     )
   })
-
+  
   output$crimeMap <- renderLeaflet({
     year_selected <- input$slider
     df <- fromJSON(file = "airport.json")
@@ -46,10 +46,6 @@ function(input, output, session) {
     equipment_df <- read.csv("db/equipments.csv")
     
     freq_table <- df
-    #   select(X, Y, year) %>%
-    #   filter(year == year_selected) %>% 
-    #   group_by(X, Y) %>% 
-    #   summarise(Total = n())
     
     
     map <- leaflet(freq_table) %>% 

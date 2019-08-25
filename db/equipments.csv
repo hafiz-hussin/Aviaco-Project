@@ -1,24 +1,24 @@
 id,icon_1,icon_2,belongsTo,state,status,current_user,previous_user,description,nextMaintenanceDate,previousMaintenanceDate,x,y,image_src
-PosAce737-400,icon/g-plane.svg,icon/plane.svg,PosAce,-,-,-,Pilot Zaki,-,2019/08/30,2019/08/01,101.684476,2.739867,https://www.posaviation.com.my/media/1137/slider-2-m.jpg
-SCISSOR_LIFT001,icon/g-van.svg,icon/g-van.svg,KLIA2,Unavailable,Unserviceable,-,LAE Abu,battery issue,2019/08/30,2019/08/01,101.684549,2.742894,-
-VAN001,icon/van.svg,icon/g-van.svg,KLIA2,Available,Serviceable,-,LAE Amat,-,2019/08/30,2019/08/01,101.684149,2.740394,-
-TOWTRUCK_WIDE_BODY001,icon/g-towtruck.png,icon/towtruck.png,KLIA1,IN-USE,Serviceable,LAE Azrol,LAE Raju,-,2019/08/30,2019/08/01,101.686149,2.740494,http://www.airportsystems.de/aircraft_pushback_tractors/
-TOWTRUCK NARROW BODY001,icon/g-towtruck.png,icon/towtruck.png,KLIA1,Unavailable,Unserviceable,-,LAE Amin,no fuel,2019/08/30,2019/08/01,101.687149,2.740794,https://www.aerospecialties.com/app/uploads/2015/03/Eagle_TT-10-12_Aircraft_Tractor_011346268740503e6e44b6d37.png
-LAVATORY TRUCK001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,Unavailable,Unserviceable,-,LAE Karim,no fuel,2019/08/30,2019/08/01,101.688249,2.740184,https://img.aeroexpo.online/images_ar/photo-g/169038-10376296.jpg
-WATER TRUCK001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,IN-USE,Serviceable,LAE Tiger,LAE Jamal,-,2019/08/30,2019/08/01,101.685149,2.740344,http://shop.narcotictests.com/images/products/water-service-truck-wsu3000.jpg
-GROUND POWER UNIT001,icon/fuel.svg,icon/fuel.svg,KLIA2,Unavailable,Unserviceable,-,LAE Izzat,engine issue,2019/08/30,2019/08/01,101.685149,2.740894,-
-AIR-CON_UNIT001,icon/fuel.svg,icon/fuel.svg,KLIA1,Available,Serviceable,-,LAE Hafiz,power issue,2019/08/30,2019/08/01,101.685149,2.740224,http://www.airportsystems.de/air_condition_units/
-AIRSTART001,icon/fuel.svg,icon/fuel.svg,KLIA2,IN-USE,Serviceable,LAE Norffendy,LAE Naton,-,2019/08/30,2019/08/01,101.689149,2.740644,-
-TRACTOR001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,Available,Serviceable,-,LAE Amirul,-,2019/08/30,2019/08/01,101.682349,2.740054,http://www.airportsystems.de/aircraft_pushback_tractors/
-9_METER_HI-LIFT001,icon/g-towbar.png,icon/towbar.png,KLIA2,Unavailable,Unserviceable,-,LAE Jack,Hydraulic leaking,2019/08/30,2019/08/01,101.683149,2.740333,-
-BOOM-LIFT001,icon/fuel.svg,icon/fuel.svg,KLIA2,Unavailable,Unserviceable,-,LAE John,Hydraulic leaking,2019/08/30,2019/08/01,101.681549,2.740444,-
-BRAKE_COOLING001,icon/g-fuel.svg,icon/fuel.svg,KLIA2,Available,Serviceable,-,LAE Jake,-,2019/08/30,2019/08/01,101.689349,2.740894,-
-TOWBAR_B737,icon/g-towbar.png,icon/towbar.png,KLIA1,IN-USE,Serviceable,LAE Jeff,LAE Mike,-,2019/08/30,2019/08/01,101.680349,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_A320,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jane,-,2019/08/30,2019/08/01,101.689549,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_B747,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jenny,-,2019/08/30,2019/08/01,101.688849,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_B757,icon/g-towbar.png,icon/towbar.png,KLIA2,Unavailable,Unserviceable,-,LAE Jessy,Broken Pin,2019/08/30,2019/08/01,101.684449,2.740554,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_A380,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jin,-,2019/08/30,2019/08/01,101.686649,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_MD80/DC9,icon/g-towbar.png,icon/towbar.png,KLIA1,IN-USE,Serviceable,LAE Tiaga,LAE Yui,-,2019/08/30,2019/08/01,101.682319,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_MULTIPURPOSE,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Hyuna,-,2019/08/30,2019/08/01,101.683149,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_A340-500/600,icon/g-towbar.png,icon/towbar.png,KLIA1,Unavailable,Unserviceable,-,LAE D-dragon,Broken Pin,2019/08/30,2019/08/01,101.687149,2.740894,http://www.airportsystems.de/aircraft_towbars/
-TOWBAR_A300/A310/B727/B757,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE IU,-,2019/08/30,2019/08/01,101.685449,2.740894,http://www.airportsystems.de/aircraft_towbars/
+PosAce737-400,icon/g-plane.svg,icon/plane.svg,PosAce,-,-,-,Pilot Zaki,-,8/30/19,8/1/19,101.684476,2.739867,https://www.posaviation.com.my/media/1137/slider-2-m.jpg
+SCISSOR_LIFT001,icon/g-van.svg,icon/g-van.svg,KLIA2,Unavailable,Unserviceable,-,LAE Abu,battery issue,8/30/19,8/1/19,101.684549,2.742894,-
+VAN001,icon/van.svg,icon/g-van.svg,KLIA2,Available,Serviceable,-,LAE Amat,-,8/30/19,8/1/19,101.684149,2.740394,-
+TOWTRUCK_WIDE_BODY001,icon/g-towtruck.png,icon/towtruck.png,KLIA1,IN-USE,Serviceable,LAE Azrol,LAE Raju,-,8/30/19,8/1/19,101.686149,2.740494,http://www.airportsystems.de/aircraft_pushback_tractors/
+TOWTRUCK NARROW BODY001,icon/g-towtruck.png,icon/towtruck.png,KLIA1,Unavailable,Unserviceable,-,LAE Amin,no fuel,8/30/19,8/1/19,101.687149,2.740794,https://www.aerospecialties.com/app/uploads/2015/03/Eagle_TT-10-12_Aircraft_Tractor_011346268740503e6e44b6d37.png
+LAVATORY TRUCK001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,Unavailable,Unserviceable,-,LAE Karim,no fuel,8/30/19,8/1/19,101.688249,2.740184,https://img.aeroexpo.online/images_ar/photo-g/169038-10376296.jpg
+WATER TRUCK001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,IN-USE,Serviceable,LAE Tiger,LAE Jamal,-,8/30/19,8/1/19,101.685149,2.740344,http://shop.narcotictests.com/images/products/water-service-truck-wsu3000.jpg
+GROUND POWER UNIT001,icon/fuel.svg,icon/fuel.svg,KLIA2,Unavailable,Unserviceable,-,LAE Izzat,engine issue,8/30/19,8/1/19,101.685149,2.740894,-
+AIR-CON_UNIT001,icon/fuel.svg,icon/fuel.svg,KLIA1,Available,Serviceable,-,LAE Hafiz,power issue,8/30/19,8/1/19,101.685149,2.740224,http://www.airportsystems.de/air_condition_units/
+AIRSTART001,icon/fuel.svg,icon/fuel.svg,KLIA2,IN-USE,Serviceable,LAE Norffendy,LAE Naton,-,8/30/19,8/1/19,101.689149,2.740644,-
+TRACTOR001,icon/g-towtruck.png,icon/towtruck.png,KLIA2,Available,Serviceable,-,LAE Amirul,-,8/30/19,8/1/19,101.682349,2.740054,http://www.airportsystems.de/aircraft_pushback_tractors/
+9_METER_HI-LIFT001,icon/g-towbar.png,icon/towbar.png,KLIA2,Unavailable,Unserviceable,-,LAE Jack,Hydraulic leaking,8/30/19,8/1/19,101.683149,2.740333,-
+BOOM-LIFT001,icon/fuel.svg,icon/fuel.svg,KLIA2,Unavailable,Unserviceable,-,LAE John,Hydraulic leaking,8/30/19,8/1/19,101.681549,2.740444,-
+BRAKE_COOLING001,icon/g-fuel.svg,icon/fuel.svg,KLIA2,Available,Serviceable,-,LAE Jake,-,8/30/19,8/1/19,101.689349,2.740894,-
+TOWBAR_B737,icon/g-towbar.png,icon/towbar.png,KLIA1,IN-USE,Serviceable,LAE Jeff,LAE Mike,-,8/30/19,8/1/19,101.680349,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A320,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jane,-,8/30/19,8/1/19,101.689549,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_B747,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jenny,-,8/30/19,8/1/19,101.688849,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_B757,icon/g-towbar.png,icon/towbar.png,KLIA2,Unavailable,Unserviceable,-,LAE Jessy,Broken Pin,8/30/19,8/1/19,101.684449,2.740554,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A380,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Jin,-,8/30/19,8/1/19,101.686649,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_MD80/DC9,icon/g-towbar.png,icon/towbar.png,KLIA1,IN-USE,Serviceable,LAE Tiaga,LAE Yui,-,8/30/19,8/1/19,101.682319,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_MULTIPURPOSE,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE Hyuna,-,8/30/19,8/1/19,101.683149,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A340-500/600,icon/g-towbar.png,icon/towbar.png,KLIA1,Unavailable,Unserviceable,-,LAE D-dragon,Broken Pin,8/30/19,8/1/19,101.687149,2.740894,http://www.airportsystems.de/aircraft_towbars/
+TOWBAR_A300/A310/B727/B757,icon/g-towbar.png,icon/towbar.png,KLIA2,Available,Serviceable,-,LAE IU,-,8/30/19,8/1/19,101.685449,2.740894,http://www.airportsystems.de/aircraft_towbars/
